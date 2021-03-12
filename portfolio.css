@@ -159,7 +159,7 @@ span {
 
 .container {
     height: 82vh;
-    padding: 60px;
+    padding: 45px;
 }
 
 #container-1 {
@@ -184,6 +184,48 @@ span {
 
 #container-6 {
     background-color: purple;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 35px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-element {
+    width: 570px;
+    height: 100px;
+}
+
+label {
+    font-size: 20px;
+    color: white;
+}
+
+.input-text {
+    width: 570px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 570px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: white
 }
 
 
