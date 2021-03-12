@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: blue;
+    background-image: url('StarryStarryNight3.jpg');
     overflow-x: hidden;
 }
 
@@ -183,7 +183,7 @@ span {
 }
 
 #container-6 {
-    background-color: purple;
+    background-color: ;
 }
 
 h1 {
@@ -203,7 +203,7 @@ form {
 }
 
 label {
-    font-size: 20px;
+    font-size: 25px;
     color: white;
 }
 
