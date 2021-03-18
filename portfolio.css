@@ -221,12 +221,9 @@ span {
     justify-content: space-around;
 }
 
-h2 {
-    color: white;
-}
-
 p {
     font-size: 25px;
+    font-weight: 200;
     color: white;
 }
 
