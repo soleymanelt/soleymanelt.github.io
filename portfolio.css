@@ -264,6 +264,7 @@ p {
 }
 
 #container-5 .slide {
+    width: 1200px;
     transition: 0.5s;
 }
 
