@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, #F94006 0%, white 270%);
+}
+
+#navbar {
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-menu {
+    display: none;
+}
+
+label {
+    width: 70px;
+    height: 50px;
+
+    margin-left: 25px;
+
+    position: relative;
+}
+
+.btn-menu-item {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+
+    border-radius: 3px;
+
+    display: block;
+    position: absolute;
+}
+
+#top-bar {
+    top: 0px;
+    transition: 0.5s;
+}
+
+#middle-bar {
+    top: 22.5px;
+    transition: 0.5s;
+}
+
+#bottom-bar {
+    top: 45px;
+}
+
+#btn-menu:checked ~ #menu-hamburger {
+    left: 0;
+    transition: 0.5s;
+}
+
+#btn-menu:checked + label #top-bar {
+    top: 22.5px;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+#btn-menu:checked + label #middle-bar {
+    top: 22.5px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+
+#btn-menu:checked + label #bottom-bar {
+    display: none;
+}
+
+#menu-hamburger {
+    width: 20%;
+    height: 35vh;
+    background-color: pink;
+
+    position: absolute;
+    top: 10vh;
+    left: -20%;
+
+    transition: 0.5s;
+}
+
+#my-account {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+#my-account img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+#my-account span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+}
+
+#central {
+    height: 78vh;
+    padding: 0% 20% 0% 20%;
+}
+
+#container {
+    height: 100%;
+    background-color: #F5CF07;
+    border-radius: 20px;
+}
+
+#question-number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+#div-question {
+    height: 60%;
+}
+
+#img-container {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-container {
+    height: 35%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+#div-answers {
+    height: calc(40% - 50px);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.button-container {
+    height: 50%;
+    padding: 25px;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    background-color: #06BFFA;
+    border: 2px solid #0593FA;
+
+    font-size: 32px;
+    color: white;
+
+    border-radius: 20px;
+
+    transition: 0.5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    border: 1px solid #0593FA;
+    font-size: 38px;
+    transition: 0.5s;
+}
+
+#timer {
+    height: 12vh;
+}
+
+#footer {
+    height: 0vh;
+    background-color: gray;
+}

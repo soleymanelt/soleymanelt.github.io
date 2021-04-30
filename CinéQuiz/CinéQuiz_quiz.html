@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinéQuiz</title>
+  <link rel="stylesheet" href="CinéQuiz_quiz.css">
+</head>
+<body>
+  <div id="navbar">
+    <input type="checkbox" name="btn-menu" id="btn-menu">
+    <label id="label-btn-menu" for="btn-menu">
+      <span class="btn-menu-item" id="top-bar"></span>
+      <span class="btn-menu-item" id="middle-bar"></span>
+      <span class="btn-menu-item" id="bottom-bar"></span>
+    </label>
+    <div id="menu-hamburger">
+      <a href="" id="link-1"></a>
+      <a href="" id="link-2"></a>
+      <a href="" id="link-3"></a>
+      <a href="" id="link-4"></a>
+    </div>
+    <a href="" id="my-account">
+      <img src="blank-profile-picture-973460_1280.png" alt="Profile pic" class="profile-pic">
+      <span>Mon compte</span>
+    </a>
+  </div>
+  <div id="central">
+    <div id="container">
+      <p id="question-number">Question 1 sur 10 :</p>
+      <div id="div-question">
+        <div id="img-container">
+          <div id="image"></div>
+        </div>
+        <div id="text-container"></div>
+      </div>
+      <div id="div-answers">
+        <div id="left">
+          <div class="button-container">
+            <button class="button" id="button-1"></button>
+          </div>
+          <div class="button-container">
+            <button class="button" id="button-2"></button>
+          </div>
+        </div>
+        <div id="right">
+          <div class="button-container">
+            <button class="button" id="button-3"></button>
+          </div>
+          <div class="button-container">
+            <button class="button" id="button-4"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="timer"></div>
+  <div id="footer"></div>
+  <script src="CinéQuiz_quiz.js"></script>
+</body>
+</html>

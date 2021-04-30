@@ -165,7 +165,6 @@ span {
 
 .content {
     height: calc(82vh - 117px);
-    display: flex;
 }
 
 #container-1 {
@@ -177,6 +176,10 @@ span {
 
 #container-2 {
     background-color: ;
+}
+
+#container-2 .content {
+    display: flex;
 }
 
 #photo {
@@ -194,7 +197,7 @@ span {
     background-color: ;
 }
 
-#container-3 .slideshow-container {
+.slider-container {
     height: calc(82vh - 117px);
     display: grid;
     grid-template-columns: 100px auto 100px;
@@ -220,7 +223,7 @@ span {
     cursor: pointer;
 }
 
-#container-3 .slideshow {
+.slider {
     overflow: hidden;
 }
 
@@ -248,18 +251,29 @@ p {
     background-color:goldenrod;
 }
 
+#container-4 .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.progress-bar {
+    padding: 50px;
+    
+}
+
 #container-5 {
     background-color: ;
 }
 
-#container-5 .slideshow-container {
+.slideshow-container {
     height: calc(82vh - 117px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#container-5 .slideshow {
+.slideshow {
     position: relative;
     width: 1200px;
     height: 562.5px;

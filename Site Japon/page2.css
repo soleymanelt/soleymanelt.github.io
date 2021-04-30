@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Signika&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(198, 26, 129, 0.29) 0%, rgba(225, 13, 140, 0) 100%);
+}
+
+#navbar {
+    width: 100%;
+    height: 13.5vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-area {
+    width: 20%;
+    margin-left: 4.5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-area p {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 70px;
+    color: #D80F0F;
+}
+
+.btn-options {
+    display: none;
+}
+
+#options {
+    width: 57.5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#options a {
+    font-family: 'Macondo Swash Caps', cursive;
+    font-size: 35px;
+}
+
+#part1 {
+    height: 75vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#pic-part1 {
+    width: 37.7%;
+
+    display: flex;
+    flex-direction: ;
+    justify-content: center;
+}
+
+#pic-part1 img {
+    width: 551px;
+    height: 551px;
+
+    margin-top: 2%;
+}
+
+#text-part1 {
+    width: 48.8%;
+
+    margin-right: 13.5%;
+    margin-left: 4.5%;
+}
+
+.title-text {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+#part2 {
+    height: 75vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#text-part2 {
+    width: 44.8%;
+
+    margin-left: 3.5%;
+    margin-right: 4.5%;
+}
+
+#pic-part2 {
+    
+}
+
+#pic-part2 img {
+    width: 815px;
+    height: 534px;
+
+    margin-top: 3%; 
+}
+
+.body-text {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 36px;
+}
+
+@media (max-width: 480px) {
+    #navbar {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      z-index: 1;
+    }
+    #logo-area {
+      width: 60%;
+      margin-left: 0;
+    }
+    #logo-area p {
+      font-size: 45px;
+    }
+    #options {
+      width: 240px;
+      height: 260px;
+      background-color: plum;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      position: absolute;
+      top: 100px;
+      right: -240px;
+      transition: 0.5s;
+    }
+    #options a {
+      font-size: 25px;
+      margin-right: 25px;
+    }
+    .open #options {
+      right: 0px;
+      transition: 0.5s;
+    }
+   .btn-options {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      right: 25px;
+    }
+    .btn-options span {
+      width: 100%;
+      height: 5px;
+      background-color: black;
+      opacity: 1;
+      transition: all 0.5s;
+    }
+    .open .span-1 {
+      transform: rotate(45deg);
+      margin-top: 22.5px;
+    }
+    .open .span-2 {
+      transform: rotate(-45deg);
+      margin-bottom: 22.5px;
+    }
+    .open .span-3 {
+      opacity: 0;
+    }
+    #central {
+      position: absolute;
+      top: 100px;
+    }
+    #part1 {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 996px;
+      margin-bottom: 30px;
+    }
+    #pic-part1 {
+      width: 100%;
+      height: 430px;
+    }
+    #pic-part1 img {
+      width: 430px;
+      height: auto;
+    }
+    #text-part1 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .title-text {
+      font-size: 35px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+    .body-text {
+      font-size: 25px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+    #part2 {
+      display: flex;
+      flex-direction: column;
+      height: 1010px;
+      margin-bottom: 30px;
+    }
+    #text-part2 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #pic-part2 {
+      width: 100%;
+      height: 430px;
+      display: flex;
+      justify-content: center;
+    }
+    #pic-part2 img {
+      width: 430px;
+      height: auto;
+    }
+  }
